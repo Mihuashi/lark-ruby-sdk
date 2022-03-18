@@ -6,7 +6,7 @@ module Lark
       end
 
       def direct_send(payload)
-        post 'message/v4/send/', payload
+        post 'im/v1/messages', payload
       end
 
       def ephemeral_send(payload)
